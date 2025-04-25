@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+</head>
+<body>
+    <!-- try, catch, throw, finally -->
+    <script>
+        try{
+            let number = 10 / 2;
+            if(!isFinite(number)){
+                throw new Error("Number is not finite");
+            }
+            console.log(number);
+        }
+        catch(error){
+            console.log("Error:",error.message);
+        }
+        finally{
+            console.log("Finally block is always executed");
+        }
+
+        console.log(2+2);
+        console.log(2+"2");
+        console.log("2"+"2");
+        console.log(10-10);
+        console.log(10-"10");
+        console.log("10"-"10");
+        console.log(2*2);
+        console.log(2*"2");
+        console.log("2"*"2");
+        console.log("2"/2);
+        console.log("2"/"2");
+        console.log(2==2);
+        console.log(2===2);
+        console.log("2"===2);
+
+        let a = 10;
+        console.log(typeof(a));
+        let name ="John";
+        console.log(typeof(name));
+
+        // let b= 5;
+        // b=b+5;
+        // b+= 5;
+        // console.log(typeof(b));
+        
+        
+    </script>
+    
+</body>
+</html>
